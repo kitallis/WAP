@@ -13,6 +13,8 @@ schedule/control a drip-irrigation system – the code effectively just turns on
 
 ## circuit
 
+tbd
+
 ## plumbing (literally)
 
 #### drip irrigation kit
@@ -21,6 +23,8 @@ I got a kit like [this](https://www.amazon.in/CINAGRO-Irrigation-Garden-Watering
 
 #### additional plumbing
 
+tbd
+
 #### water
 
-I don't have an active tap in any of my balconies housing the plants, so I hung a water canister like this with at least 3-4L of stored water to provide enough downward pressure to reach all plants. Including a pipe that drops straight down at 90£¡™£¨¨•¶™¡£∞§¡™£§¶∞¡£ºª¡™–ºº
+I don't have an active tap in any of my balconies that house the plants, so I hung a water canister like this with at least 3-4L of stored water to provide enough downward pressure to reach all plants.
