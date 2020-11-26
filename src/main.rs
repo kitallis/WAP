@@ -13,19 +13,19 @@ struct Arguments {
 
 // Export a GPIO for use. This will not fail if already exported
 fn pour(pin: u64, duration_ms: u64, period_ms: u64) -> sysfs_gpio::Result<()> {
-  let actionPin = Pin::new(pin);
+  let action_pin = Pin::new(pin);
 
-  actionPin.with_exported(|| {
-    actionPin.set_direction(Direction::Low)?;
+  action_pin.with_exported(|| {
+    action_pin.set_direction(Direction::Low)?;
     let iterations = duration_ms / period_ms / 2;
     for _ in 0..iterations {
-      actionPin.set_value(0)?;
+      action_pin.set_value(0)?;
       sleep(Duration::from_millis(period_ms));
-      actionPin.set_value(1)?;
+      action_pin.set_value(1)?;
       sleep(Duration::from_millis(period_ms));
     }
 
-    actionPin.set_value(0)?;
+    action_pin.set_value(0)?;
     Ok(())
   })
 }
