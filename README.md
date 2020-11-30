@@ -49,4 +49,4 @@ I don't have an active tap in any of my balconies that house the plants, so I hu
 
 ## working
 
-![](img/video.mp4)
+![](img/wap.gif)
