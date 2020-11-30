@@ -13,7 +13,15 @@ schedule/control a drip-irrigation system – the code effectively just turns on
 
 ## circuit
 
-tbd
+(please excuse my terrible soldering, I have no prior experience in this)
+
+Since I didn't have a perfboard and I wanted to avoid a breadboard for long-term usage, I decided to solder up the wires over these terminal tongs for ease of visibility.
+
+![](img/circuit.jpg)
+
+After some crappy insulation using a gaffer tape to prevent against accidental water-damange:
+
+![](img/circuit-insulated.jpg)
 
 ## plumbing (literally)
 
@@ -23,8 +31,19 @@ I got a kit like [this](https://www.amazon.in/CINAGRO-Irrigation-Garden-Watering
 
 #### additional plumbing
 
-tbd
+The pipe seals are exteremely important in this system, I made use of 3 things for various different seals:
+
+1. Cut open the mouth of the canister (where the tap used to be). Insert a 3/4" pipe holder and seal it with a silicon sealant.
+![](img/silicon-sealant.jpg)
+2. Use pipe cement to join together the elbow joints with the PVC pipes.
+![](img/pipe-cement.jpg)
+3. Use a combination of 2. and thread-seal tapes for joints involving screwing in the joint threads (like the one on the valve).
+![](img/thread-seal.png)
+
+
 
 #### water
 
-I don't have an active tap in any of my balconies that house the plants, so I hung a water canister like this with at least 3-4L of stored water to provide enough downward pressure to reach all plants.
+I don't have an active tap in any of my balconies that house the plants, so I hung a water canister like this with at least 3-4L of stored water to provide enough downward pressure to reach all plants
+
+![](img/can.jpg)
