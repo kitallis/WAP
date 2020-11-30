@@ -37,13 +37,16 @@ The pipe seals are exteremely important in this system, I made use of 3 things f
 ![](img/silicon-sealant.jpg)
 2. Use pipe cement to join together the elbow joints with the PVC pipes.
 ![](img/pipe-cement.jpg)
-3. Use a combination of 2. and thread-seal tapes for joints involving screwing in the joint threads (like the one on the valve).
+3. Use thread-seal tapes for joints involving screwing in the joint threads (like the one on the valve).
 ![](img/thread-seal.png)
-
-
 
 #### water
 
 I don't have an active tap in any of my balconies that house the plants, so I hung a water canister like this with at least 3-4L of stored water to provide enough downward pressure to reach all plants
 
 ![](img/can.jpg)
+
+
+## working
+
+![](img/video.mp4)
