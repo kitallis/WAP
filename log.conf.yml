@@ -1,0 +1,18 @@
+refresh_rate: 30 seconds
+
+appenders:
+  stdout:
+    kind: console
+  wap:
+    kind: file
+    path: "wap.log"
+    encoder:
+      pattern: "{d(%Y-%m-%d %H:%M:%S)} - {m}\n"
+
+loggers:
+  wap:
+    level: info
+    appenders:
+      - stdout
+      - wap
+    additive: false

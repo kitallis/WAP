@@ -20,7 +20,7 @@ build:
 	cargo build $(build_target) $(release_flag)
 
 install:
-	scp target/$(build)/$(release_location)/$(prog) $(pi_location):~/$(prog)-$(extension)
+	rsync target/$(build)/$(release_location)/$(prog) log.conf.yml $(pi_location):~/$(prog)/
 
 all: build install
 
