@@ -11,11 +11,11 @@ schedule/control a drip-irrigation system – the code effectively just turns on
 * download the WAP binary
 * configure it to be [scheduled](http://www.fao.org/3/s8684e/s8684e07.htm) using crontab-ui
 
-### build
+#### build
 
 * Run `make` to [cross-compile](https://github.com/japaric/rust-cross) a debug build for the RPi 4
 * Run `make release=1` for a release build
-* Run `make all release=1` to build and install the binary on to the RPi (please specify your RPi address in the `Makefile`)
+* Run `make all release=1` to build and install the binary on to the RPi (specify your RPi address in the `Makefile`)
 
 The crontab command that I use:
 
