@@ -28,6 +28,10 @@ pub fn get() -> Option<Arguments> {
         Err(_) => return None,
     };
 
+    if duration_ms <= period_ms {
+        return None;
+    }
+
     Some(Arguments {
         pin: pin,
         duration_ms: duration_ms,

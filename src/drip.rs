@@ -16,6 +16,8 @@ fn init_ctrlc_handler(running: Arc<AtomicBool>) {
 }
 
 pub fn it(pin_num: u64, duration_ms: u64, period_ms: u64) -> sysfs_gpio::Result<()> {
+    info!("Starting this sessions' drip");
+
     let pin = Pin::new(pin_num);
     let running = Arc::new(AtomicBool::new(true));
     init_ctrlc_handler(running.clone());

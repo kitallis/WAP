@@ -10,12 +10,11 @@ fn init_logger() {
 
 fn print_usage() {
     println!("Usage: ./wap <pin> <duration_ms> <period_ms>");
+    println!("Make sure that duration_ms is bigger than period_ms.");
 }
 
 fn main() {
     init_logger();
-
-    info!("Starting this sessions' drip");
 
     match args::get() {
         Some(args) => match drip::it(args.pin, args.duration_ms, args.period_ms) {
