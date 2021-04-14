@@ -10,17 +10,30 @@ fn init_logger() {
 
 fn print_usage() {
     println!("Usage: ./wap <pin> <duration_ms> <period_ms>");
-    println!("Make sure that duration_ms is bigger than period_ms.");
 }
 
 fn main() {
     init_logger();
 
     match args::get() {
-        Some(args) => match drip::it(args.pin, args.duration_ms, args.period_ms) {
+        Ok(args) => match drip::it(args.pin, args.duration_ms, args.period_ms) {
             Ok(()) => info!("Finished this sessions' drip"),
             Err(err) => error!("Error, dry-ass plants: {}", err),
         },
-        None => print_usage(),
+
+        Err(args::InputError::ParseError) => {
+            println!("Could not parse arguments!");
+            print_usage()
+        }
+
+        Err(args::InputError::NotEnoughArguments) => {
+            println!("Insufficient arguments!");
+            print_usage()
+        }
+
+        Err(args::InputError::PeriodShouldBeSmallerThanDuration) => {
+            println!("duration_ms should be bigger than period_ms.");
+            print_usage()
+        }
     }
 }
