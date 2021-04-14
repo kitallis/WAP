@@ -8,8 +8,20 @@ schedule/control a drip-irrigation system – the code effectively just turns on
 
 * get an rpi and [set it up](https://gist.github.com/kitallis/7b5ba8ffb9045bd3dce6cd710e00f26a)
 * install [crontab-ui](https://github.com/alseambusher/crontab-ui) on it
-* download the WAP binary 
-* configure it to be [scheduled](http://www.fao.org/3/s8684e/s8684e07.htm) using crontab-ui 
+* download the WAP binary
+* configure it to be [scheduled](http://www.fao.org/3/s8684e/s8684e07.htm) using crontab-ui
+
+### build
+
+* Run `make` to [cross-compile](https://github.com/japaric/rust-cross) a debug build for the RPi 4
+* Run `make release=1` for a release build
+* Run `make all release=1` to build and install the binary on to the RPi (please specify your RPi address in the `Makefile`)
+
+The crontab command that I use:
+
+```bash
+cd $HOME/wap && ./wap 12 120000 20000
+```
 
 ## circuit
 
@@ -46,7 +58,6 @@ I don't have an active tap in any of my balconies that house the plants, so I hu
 
 ![](img/can.jpg)
 
-
-## working
+## 🚚 🚚 🚚 🚚
 
 ![](img/wap.gif)
