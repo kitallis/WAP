@@ -9,7 +9,7 @@ use sysfs_gpio::{Direction, Pin};
 
 fn init_ctrlc_handler(running: Arc<AtomicBool>) {
     ctrlc::set_handler(move || {
-        info!("Shutting down drip...");
+        info!("Shutting down the drip...");
         running.store(false, Ordering::SeqCst);
     })
     .expect("Error setting Ctrl-C handler");
@@ -36,7 +36,7 @@ pub fn it(pin_num: u64, duration_ms: u64, period_ms: u64) -> sysfs_gpio::Result<
 
         // run in batches to avoid over-heating the solenoid
         for _ in 0..batches {
-            while running.load(Ordering::SeqCst) {
+            if running.load(Ordering::SeqCst) {
                 pin.set_value(0)?;
                 info!("Drip is ON");
                 sleep(Duration::from_millis(period_ms));
