@@ -17,7 +17,7 @@ schedule/control a drip-irrigation system – the code effectively just turns on
 * Run `make release=1` for a release build
 * Run `make all release=1` to build and install the binary on to the RPi (specify your RPi address in the `Makefile`)
 
-The crontab command that I use:
+Run `./wap` to see the usage. The command that I use on my crontab:
 
 ```bash
 cd $HOME/wap && ./wap 12 120000 20000
